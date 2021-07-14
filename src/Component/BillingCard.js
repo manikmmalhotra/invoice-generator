@@ -9,6 +9,8 @@ import MuiPhoneNumber from "material-ui-phone-number";
 const Billingcard = styled("div")({
   margin: "15px",
   padding: "20px",
+  display: "flex",
+  flexDirection: "column",
   backgroundColor: "rgb(142, 201, 228,0.3)",
 });
 const Billing = styled("div")({
