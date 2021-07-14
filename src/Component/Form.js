@@ -1,13 +1,20 @@
-import { Button, Input, TextField } from "@material-ui/core";
+import {
+  Button,
+  Input,
+  TextField,
+  InputBase,
+  InputAdornment,
+} from "@material-ui/core";
 import React from "react";
 import { styled } from "@material-ui/core/styles";
 import BillingCard from "./BillingCard";
 import InsertPhotoIcon from "@material-ui/icons/InsertPhoto";
 
 //styling
-const InputHead = styled(Input)({
+const InputHead = styled(InputBase)({
   margin: "20px",
   fontSize: "2rem",
+  textAlign: "center",
   width: "20%",
 });
 const Formm = styled("div")({
@@ -38,6 +45,16 @@ const Logobtn = styled("div")({
   backgroundColor: "rgb(0, 0, 0,0.1)",
   border: "1px dotted rgb(0, 0, 0,0.5)",
   margin: "auto",
+});
+const Terms = styled(InputBase)({
+  fontSize: "1rem",
+  fontStyle: "bold",
+});
+const TermsInput = styled(Input)({
+  fontSize: "0.8rem",
+  fontStyle: "bold",
+  marginTop: "5px",
+  marginBottom: "5px",
 });
 
 function Form() {
@@ -129,6 +146,36 @@ function Form() {
             heading="Billed to"
             name="Yours Branch"
             sideline="yours Client details"
+          />
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            padding: "15px",
+            margin: "15px",
+            backgroundColor: "rgb(142, 201, 228,0.3)",
+          }}
+        >
+          <Terms defaultValue="Terms and Condition" placeholder="manik" />
+          <TermsInput
+            value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
+            startAdornment={
+              <InputAdornment position="start">1.</InputAdornment>
+            }
+          />
+          <TermsInput
+            value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
+            startAdornment={
+              <InputAdornment position="start">2.</InputAdornment>
+            }
+          />
+          <TermsInput
+            value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
+            startAdornment={
+              <InputAdornment position="start">3.</InputAdornment>
+            }
           />
         </div>
       </div>
