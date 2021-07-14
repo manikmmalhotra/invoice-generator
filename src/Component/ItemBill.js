@@ -78,7 +78,6 @@ export default function ItemBill() {
             <Input2 defaultValue="1"></Input2>
             <Input3 defaultValue="1"></Input3>
             <Input4 defaultValue="1"></Input4>
-            <span className="cross">X</span>
           </ItemDetails>
           <Input5 placeholder="Add Description"></Input5>
 
@@ -91,12 +90,16 @@ export default function ItemBill() {
             >
               Add Image
             </Button>
+            <Button
+              style={{ margin: "20px" }}
+              variant="contained"
+              color="primary"
+            >
+              Remove Item
+            </Button>
           </label>
         </div>
       </Itemcard>
-      <div className="newline">
-        <span className="text">Add New Line</span>
-      </div>
     </div>
   );
 }

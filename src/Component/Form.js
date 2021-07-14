@@ -9,7 +9,15 @@ import React from "react";
 import { styled } from "@material-ui/core/styles";
 import BillingCard from "./BillingCard";
 import InsertPhotoIcon from "@material-ui/icons/InsertPhoto";
-import { Autorenew, MailRounded } from "@material-ui/icons";
+import {
+  Add,
+  AddCircleOutline,
+  Autorenew,
+  LocalOffer,
+  MailRounded,
+  SportsRugbySharp,
+  TagFaces,
+} from "@material-ui/icons";
 import MaterialUiPhoneNumber from "material-ui-phone-number";
 import ItemBill from "./ItemBill";
 import SaveIcon from "@material-ui/icons/Save";
@@ -164,9 +172,70 @@ function Form() {
 
         <div>
           <ItemBill />
+          <ItemBill />
+          <ItemBill />
+          <div className="newline">
+            <span className="text">Add New Line</span>
+          </div>
         </div>
 
-        <div style={{ display: "flex" }}></div>
+        <div style={{ display: "flex" }}>
+          <div style={{ flex: "1.2" }}></div>
+          <div style={{ flex: "0.4", margin: "15px" }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                margin: "10px",
+                fontWeight: "400",
+                fontSize: "1.2rem",
+                color: "rgba(0,0,0,0.8)",
+              }}
+            >
+              <LocalOffer />
+              Add Item Discount
+            </div>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                margin: "10px",
+                fontWeight: "400",
+                fontSize: "1.2rem",
+                color: "rgba(0,0,0,0.8)",
+              }}
+            >
+              <AddCircleOutline />
+              Add Discount / Reductions
+            </div>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                margin: "10px",
+                fontWeight: "400",
+                fontSize: "1.2rem",
+                color: "rgba(0,0,0,0.8)",
+              }}
+            >
+              <AddCircleOutline />
+              Add Additional Charges
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                margin: "10px",
+                fontWeight: "800",
+                fontSize: "1.5rem",
+                color: "rgba(0,0,0,0.5)",
+              }}
+            >
+              <div>Total (INR)</div>
+              <div>$1</div>
+            </div>
+          </div>
+        </div>
 
         <div
           style={{
