@@ -110,7 +110,7 @@ function BillingCard({ heading, name, sideline }) {
           <MuiPhoneNumber
             name="phone"
             data-cy="user-phone"
-            defaultCountry={"us"}
+            defaultCountry={"in"}
             value={phone}
           />
         </div>

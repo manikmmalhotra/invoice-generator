@@ -81,7 +81,7 @@ const Btn = styled(Button)({
 function Form() {
   return (
     <Formm>
-      <InputHead defaultValue="Hello world" placeholder="manik" />
+      <InputHead defaultValue="Invoice" placeholder="Heading" />
       <div style={{ margin: "20px" }}>
         <FormTop>
           <div
@@ -120,14 +120,9 @@ function Form() {
               <TextField
                 required
                 id="standard-required"
-                defaultValue="Invoice No."
+                defaultValue="Invoice Date."
               />
-              <TextField
-                required
-                id="standard-required"
-                defaultValue="Hello World"
-                type="date"
-              />
+              <TextField required id="standard-required" type="date" />
             </div>
             <div
               style={{
@@ -140,14 +135,9 @@ function Form() {
               <TextField
                 required
                 id="standard-required"
-                defaultValue="Invoice No."
+                defaultValue="Due Date"
               />
-              <TextField
-                required
-                id="standard-required"
-                defaultValue="Hello World"
-                type="date"
-              />
+              <TextField required id="standard-required" type="date" />
             </div>
           </div>
           <div style={{ flex: "1" }}>
@@ -232,7 +222,7 @@ function Form() {
               }}
             >
               <div>Total (INR)</div>
-              <div>$1</div>
+              <div>3</div>
             </div>
           </div>
         </div>
@@ -289,7 +279,7 @@ function Form() {
             <MaterialUiPhoneNumber
               name="phone"
               data-cy="user-phone"
-              defaultCountry={"us"}
+              defaultCountry={"in"}
               value=""
             />
           </div>
