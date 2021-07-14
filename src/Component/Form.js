@@ -9,6 +9,10 @@ import React from "react";
 import { styled } from "@material-ui/core/styles";
 import BillingCard from "./BillingCard";
 import InsertPhotoIcon from "@material-ui/icons/InsertPhoto";
+import { Autorenew, MailRounded } from "@material-ui/icons";
+import MaterialUiPhoneNumber from "material-ui-phone-number";
+
+import SaveIcon from "@material-ui/icons/Save";
 
 //styling
 const InputHead = styled(InputBase)({
@@ -55,6 +59,15 @@ const TermsInput = styled(Input)({
   fontStyle: "bold",
   marginTop: "5px",
   marginBottom: "5px",
+});
+const MailIcon = styled(MailRounded)({
+  fontSize: "1.2rem",
+  color: "red",
+});
+const Btn = styled(Button)({
+  fontSize: "1rem",
+  backgroundColor: "skyblue",
+  margin: "15px",
 });
 
 function Form() {
@@ -178,6 +191,42 @@ function Form() {
             }
           />
         </div>
+        <div
+          style={{
+            padding: "15px",
+            margin: "15px",
+            backgroundColor: "rgb(142, 201, 228,0.3)",
+          }}
+        >
+          <Terms defaultValue="Your Contact details" placeholder="manik" />
+          <div style={{ fontSize: "1rem" }}>
+            For any enquiry, reach out via email at{" "}
+            <Input
+              placeholder="Your Email"
+              startAdornment={
+                <InputAdornment position="start">
+                  <MailIcon />
+                </InputAdornment>
+              }
+            />
+            {"  "}
+            or call on
+            <MaterialUiPhoneNumber
+              name="phone"
+              data-cy="user-phone"
+              defaultCountry={"us"}
+              value=""
+            />
+          </div>
+        </div>
+        <Btn
+          variant="contained"
+          color="primary"
+          size="small"
+          startIcon={<SaveIcon />}
+        >
+          Save
+        </Btn>
       </div>
     </Formm>
   );
