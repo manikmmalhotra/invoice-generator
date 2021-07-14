@@ -11,7 +11,7 @@ import BillingCard from "./BillingCard";
 import InsertPhotoIcon from "@material-ui/icons/InsertPhoto";
 import { Autorenew, MailRounded } from "@material-ui/icons";
 import MaterialUiPhoneNumber from "material-ui-phone-number";
-
+import ItemBill from "./ItemBill";
 import SaveIcon from "@material-ui/icons/Save";
 
 //styling
@@ -161,6 +161,12 @@ function Form() {
             sideline="yours Client details"
           />
         </div>
+
+        <div>
+          <ItemBill />
+        </div>
+
+        <div style={{ display: "flex" }}></div>
 
         <div
           style={{
