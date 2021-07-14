@@ -2,6 +2,7 @@ import { Button, Input } from "@material-ui/core";
 import React from "react";
 import { styled } from "@material-ui/core/styles";
 import Inputt from "./Input";
+import BillingCard from "./BillingCard";
 
 //styling
 const InputHead = styled(Input)({
@@ -24,7 +25,7 @@ const FormTop = styled("div")({
 function Form() {
   return (
     <Formm>
-      <InputHead defaultValue="Hello world" placeholder="manik" />
+      {/* <InputHead defaultValue="Hello world" placeholder="manik" />
       <FormTop>
         <div style={{ flex: "1" }}>
           <Inputt />
@@ -35,7 +36,19 @@ function Form() {
         <div style={{ flex: "1" }}>
           <Button />
         </div>
-      </FormTop>
+      </FormTop> */}
+      <div style={{ display: "flex" }}>
+        <BillingCard
+          heading="Billed By"
+          name="Yours Buisness"
+          sideline="yours details"
+        />
+        <BillingCard
+          heading="Billed to"
+          name="Yours Branch"
+          sideline="yours Client details"
+        />
+      </div>
     </Formm>
   );
 }
