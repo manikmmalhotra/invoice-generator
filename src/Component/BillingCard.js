@@ -7,7 +7,7 @@ import MuiPhoneNumber from "material-ui-phone-number";
 
 //styling
 const Billingcard = styled("div")({
-  margin: "10px",
+  margin: "15px",
   padding: "20px",
   backgroundColor: "rgb(142, 201, 228,0.3)",
 });
@@ -15,6 +15,7 @@ const Billing = styled("div")({
   margin: "10px",
   padding: "20px",
   backgroundColor: "#fff",
+  border: "1px solid rgb(0, 0, 0,0.3)",
   display: "flex",
   flexDirection: "column",
   borderRadius: "10px",

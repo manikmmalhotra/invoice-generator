@@ -16,6 +16,12 @@ const Formm = styled("div")({
   alignItems: "center",
   justifyContent: "center",
   flexDirection: "column",
+  width: "90%",
+  backgroundColor: "#fff",
+  borderRadius: "10px",
+  margin: "20px",
+  marginLeft: "auto",
+  marginRight: "auto",
 });
 const FormTop = styled("div")({
   display: "flex",
@@ -25,7 +31,7 @@ const FormTop = styled("div")({
 function Form() {
   return (
     <Formm>
-      {/* <InputHead defaultValue="Hello world" placeholder="manik" />
+      <InputHead defaultValue="Hello world" placeholder="manik" />
       <FormTop>
         <div style={{ flex: "1" }}>
           <Inputt />
@@ -36,8 +42,8 @@ function Form() {
         <div style={{ flex: "1" }}>
           <Button />
         </div>
-      </FormTop> */}
-      <div style={{ display: "flex" }}>
+      </FormTop>
+      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <BillingCard
           heading="Billed By"
           name="Yours Buisness"
